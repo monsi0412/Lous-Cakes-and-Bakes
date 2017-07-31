@@ -1,0 +1,71 @@
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size:72px;
+}
+.lightGray{
+    background-color: lightgray;
+    color: black;
+}
+.darkGray{
+    background-color: gray;
+    color: white;
+}
+.col-xs-1 {
+    background-color:OrangeRed;
+    border: solid;
+}
+
+.col-xs-2 {
+    background-color:SteelBlue  ;
+    border: solid;
+}
+
+.col-xs-3 {
+    
+}
+
+.col-xs-4 {
+    background-color:LightYellow ;
+    border: solid;
+}
+
+.col-xs-5 {
+    background-color:blue;
+    border: solid;
+}
+
+.col-xs-6 {
+    background-color: LightSalmon ;
+    border: solid;
+}
+
+.col-xs-7 {
+    background-color: brown;
+    border: solid;
+}
+
+.col-xs-8 {
+    background-color:LightSeaGreen ;
+    border: solid;
+}
+
+.col-xs-9 {
+    background-color:black;
+    border: solid;
+}
+
+.col-xs-10 {
+    background-color:brown;
+    border: solid;
+}
+
+.col-xs-11 {
+    background-color:white;
+    border: solid;
+}
+
+.col-xs-12 {
+    background-color:white;
+}
