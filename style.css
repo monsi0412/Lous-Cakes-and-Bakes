@@ -4,6 +4,15 @@ h1{
     font-family: 'Sacramento', cursive;
     font-size:72px;
 }
+
+p{
+    font-family: 'Lancelot', cursive;    
+}
+
+
+
+/*Header Elements*/
+
 .lightGray{
     background-color: #E0E0E0;
     color: black;
@@ -12,115 +21,9 @@ h1{
     background-color: #BDBDBD;
     color: white;
 }
-
-.col-xs-1 {
-    background-color:OrangeRed;
-    border: solid;
-}
-
-.col-xs-2 {
-    background-color:SteelBlue  ;
-    border: solid;
-}
-
-.col-xs-3 {
-    
-}
-
-.col-xs-4 {
-    background-color:LightYellow ;
-    border: solid;
-}
-
-.col-xs-5 {
-    background-color:blue;
-    border: solid;
-}
-
-.col-xs-6 {
-    background-color: LightSalmon ;
-    border: solid;
-}
-
-.col-xs-7 {
-    background-color: brown;
-    border: solid;
-}
-
-.col-xs-8 {
-    background-color:LightSeaGreen ;
-    border: solid;
-}
-
-.col-xs-9 {
-    background-color:black;
-    border: solid;
-}
-
-.col-xs-10 {
-    background-color:brown;
-    border: solid;
-}
-
-.col-xs-11 {
-    background-color:white;
-    border: solid;
-}
-
-.col-xs-12 {
-    background-color:white;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
+#link-home:visited, #link-home:link, #link-home:active, #link-home:hover{
     text-decoration: none;
-    border-radius:50%;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-  background: #9B51E0;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-#footer{
-    width:300px;
-    position:fixed;
-    bottom:10px;
-    left:50%;
-    margin-left:-150px;
-}
-
-ul.nav-pills > li{
-    width: 24.88%;
-    text-align: center;
-}
-
-#home-pg-cake{
-    width:100%;
+    color:black;
 }
 #flourish-left, #flourish-right{
     width:225px;
@@ -134,23 +37,104 @@ ul.nav-pills > li{
     float:right;
     margin-right:10%;
 }
-#link-home:visited, #link-home:link, #link-home:active, #link-home:hover{
-    text-decoration: none;
-    color:black;
+#shopping-cart{
+    height:30px;
+    float:right;
+    margin-right:2%;
 }
-
-.gallery{
-    height: 200px;
-    width: 300px;
+ul.nav-pills > li{
+    width: 24.88%;
     text-align: center;
 }
+.nav-font{
+    font-family: 'Lancelot', cursive;
+    color:black;
+    font-size:25px;
+}
+#under-flourish{
+    width:300px;
+    display:block;
+    margin:0 auto;
+    margin-top:-83px;
+}
+
+
+
+/*Footer Elements*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity:0.8;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+  background: #9B51E0;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+#footer{
+    width:300px;
+    position:fixed;
+    bottom:10px;
+    left:50%;
+    margin-left:-150px;
+}
+
+
+
+
+/*Home page only*/
+
+#home-pg-cake{
+    width:100%;
+}
+
+/*About page only*/
+
+#aboutPgImg{
+    display:block;
+    margin:0 auto;    
+}
+#aboutUsImg{
+    margin:10px;
+}
+#aboutUs{
+    font-size:25px;
+    text-align: justify;
+    text-justify: inter-word;
+    width:70%;
+    display:block;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+
+/*Contact page only */
 
 #map{
     float:right;
     margin-right:5%;
     margin-bottom: 5%
 }
-
 .address{
     float:left;
     margin-left: 5%;
@@ -159,71 +143,91 @@ ul.nav-pills > li{
     margin-top:10%;
 }
 
-#one{
-    height: 300px;
-    width: 500px;
-    margin-left: 5%;
-}
+/*Order page only*/
 
-#two{
+.orderPgCake{
+    height:300px;
+}
+.description{
+    font-size:30px;
+}
+.descriptionBtn{
+    font-family: 'Lancelot', cursive; 
+    font-size:15px;
     
 }
+/*.cakeTypes{*/
+    /*margin:10px;*/
+/*    display:block;*/
+/*    margin:0 auto;*/
+/*}*/
+/*.orderOptionLeft, .orderOptionRight{*/
+/*    display:inline-block;    */
+/*    width:40%;*/
+/*    margin: 20px;*/
+/*}*/
+/*.orderOptionRight{*/
+/*    float:left;*/
+    /*margin-left: 10%*/
+/*}*/
+/*.orderOptionRight{*/
+/*    float:right;*/
+    /*margin-right: 10%*/
+/*}*/
+/*.description, .descriptionBtn{*/
+/*    float: right;*/
+/*}*/
+/*.holdsOptions{*/
+    /*display:block;*/
+/*    margin:0 auto;*/
+/*}*/
 
-#three{
-    
-}
 
-#four{
-    
+/* bootstrap columns*/
+.col-xs-1 {
+    background-color:OrangeRed;
+    border: solid;
 }
-
-#five{
-    
+.col-xs-2 {
+    background-color:SteelBlue  ;
+    border: solid;
 }
-#six{
-    
+.col-xs-3 {
+    background-color:Blue  ;
+    border: solid;
 }
-
-#seven{
-    
+.col-xs-4 {
+    background-color:LightYellow ;
+    border: solid;
 }
-
-#eight{
-    
+.col-xs-5 {
+    background-color:blue;
+    border: solid;
 }
-
-#nine{
-    
+.col-xs-6 {
+    background-color: LightSalmon ;
+    border: solid;
 }
-
-#ten{
-    
+.col-xs-7 {
+    background-color: brown;
+    border: solid;
 }
-
-#eleven{
-    
+.col-xs-8 {
+    background-color:LightSeaGreen ;
+    border: solid;
 }
-
-#twelve{
-    
+.col-xs-9 {
+    background-color:black;
+    border: solid;
 }
-
-#thirteen{
-    
+.col-xs-10 {
+    background-color:brown;
+    border: solid;
 }
-
-#fourteen{
-    
+.col-xs-11 {
+    background-color:white;
+    border: solid;
 }
-
-#fifteen{
-    
-}
-
-#sixteen{
-    
-}
-
-#seventeen{
-    
+.col-xs-12 {
+    background-color:white;
 }
