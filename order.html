@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Order</title>
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="myscripts.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -37,51 +38,64 @@
         </div>
         
         <div class="dropdown cakeTypes">
-    
             <button class="btn dropdown-toggle cakeTypes" data-toggle="dropdown">Types of Cakes</button>
-        
             <div class="dropdown-menu">
-    
                 <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#englishModal">Type1</div></a>
                 <a href="#"><div class="dropdown-item" data-toggle="modal" data-target="#mathModal">Type2</div></a>
                 <a href="#"><div class="dropdown-item" data-toggle="modal" data-target="#historyModal">Type3</div></a>
                 <a href="#"><div class="dropdown-item" data-toggle="modal" data-target="#astronomyModal">Type4</div></a>
             </div>
-    
         </div>
-    <div id="holdsOptions">
         
-        <div class="orderOption orderOptionLeft">
-            <img src="cake pics/vanilla cake.jpg" class="orderPgCake img-thumbnail">
-            <p class="description">description</p>
-            <button class="descriptionBtn" data-toggle="modal" data-target="#cake1Modal">order now</button>
+        
+        <div id="holdsOptions" class="container-fluid" align="center">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="orderOption col-xs-3">
+                    <img src="cake pics/vanilla cake.jpg" class="orderPgCake img-thumbnail">
+                </div>
+                <div class="col-xs-1 orderDes">                    
+                    <p class="description">description</p>
+                    <button class="descriptionBtn" data-toggle="modal" data-target="#cake1Modal">order now</button>
+                </div>
+                <div class="orderOption orderOptionRight col-xs-3">
+                    <img src="cake pics/chocolate cake.jpg" class="orderPgCake img-thumbnail">
+                </div>
+                <div class="col-xs-1 orderDes">
+                    <p class="description">description</p>
+                    <button class="descriptionBtn" data-toggle="modal" data-target="#cake2Modal">order now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div> 
+                <div class="orderOption orderOptionLeft col-xs-3">
+                        <img src="cake pics/red velvet.jpeg" class="orderPgCake img-thumbnail">
+                </div>
+                <div class="col-xs-1 orderDes">
+                    <p class="description">description</p>
+                    <button class="descriptionBtn" data-toggle="modal" data-target="#cake3Modal">order now</button>
+                </div>
+                <div class="orderOption orderOptionRight col-xs-3">
+                    <img src="cake pics/strawberry cake.jpg" class="orderPgCake img-thumbnail">
+                </div>
+                <div class="col-xs-1 orderDes">
+                    <p class="description">description</p>
+                    <button class="descriptionBtn" data-toggle="modal" data-target="#cake4Modal">order now</button>
+                </div>
+            </div>
+                
         </div>
-        <div class="orderOption orderOptionRight">
-            <img src="cake pics/chocolate cake.jpg" class="orderPgCake img-thumbnail">
-            <p class="description">description</p>
-            <button class="descriptionBtn" data-toggle="modal" data-target="#cake2Modal">order now</button>
-        </div>
-        <div class="orderOption orderOptionLeft">
-            <img src="cake pics/red velvet.jpeg" class="orderPgCake img-thumbnail">
-            <p class="description">description</p>
-            <button class="descriptionBtn" data-toggle="modal" data-target="#cake3Modal">order now</button>
-        </div>
-        <div class="orderOption orderOptionRight">
-            <img src="cake pics/strawberry cake.jpg" class="orderPgCake img-thumbnail">
-            <p class="description">description</p>
-            <button class="descriptionBtn" data-toggle="modal" data-target="#cake4Modal">order now</button>
-        </div>
-    </div>
 
         <div id="cake1Modal" class="modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
                         <h1>Cake 1</h1>
+                        <img src="cake pics/vanilla cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
                         <p>qty</p>
-                        <a href="checkout.html"><button id="checkout">checkout now</button></a>
+                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
             </div>       
@@ -91,10 +105,11 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <h1>Cake 2</h1>
+                        <img src="cake pics/chocolate cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
                         <p>qty</p>
-                        <a href="checkout.html"><button id="checkout">checkout now</button></a>
+                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
             </div>       
@@ -104,10 +119,11 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <h1>Cake 3</h1>
+                        <img src="cake pics/red velvet.jpeg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
                         <p>qty</p>
-                        <a href="checkout.html"><button id="checkout">checkout now</button></a>
+                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
             </div>       
@@ -117,10 +133,11 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <h1>Cake 4</h1>
+                        <img src="cake pics/strawberry cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
                         <p>qty</p>
-                        <a href="checkout.html"><button id="checkout">checkout now</button></a>
+                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
             </div>       
