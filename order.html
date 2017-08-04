@@ -9,27 +9,49 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lancelot|League+Script|Sacramento|Tangerine" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="icon" href="flourishes/favicon.ico">
     </head>
     <body>
-        <div id="header" class="row">
-            <img id="flourish-left" src="flourishes/flourish-left.png">
-            <a href="checkout.html"><img id="shopping-cart" src="flourishes/shopping cart.png"></a>
-            <img id="flourish-right" src="flourishes/flourish.png">
-            <h1>
-                <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
-            </h1>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <ul class="nav nav-pills">
-                        <li class="lightGray"><a class="nav-font" href="about.html">About</a></li>
-                        <li class="darkGray"><a class="nav-font" href="contact.html">Contact</a></li>
-                        <li class="lightGray"><a class="nav-font" href="gallery.html">Gallery</a></li>
-                        <li class="darkGray"><a class="nav-font" href="order.html">Order</a></li>
-                    </ul>
-                </div>
-            </nav>
+         <div id="header" class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+                <img id="flourish-left" src="flourishes/flourish-left.png" class="img-responsive">
+            </div>
+            <div class="col-xs-6">
+                <h1>
+                    <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
+                </h1>
+            </div>
+            <div class="col-xs-2">
+                <img id="flourish-right" src="flourishes/flourish.png" class="img-responsive">
+            </div>
+            
+            <a href="checkout.html"><img id="shopping-cart" class="img-responsive" src="flourishes/shopping cart.png"></a>
         </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="navbarCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div>
+            <div class="container" id="navBar">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="lightGray"><a class="nav-font" href="about.html">About</a></li>
+                            <li class="darkGray"><a class="nav-font" href="contact.html">Contact</a></li>
+                            <li class="lightGray"><a class="nav-font" href="gallery.html">Gallery</a></li>
+                            <li class="darkGray"><a class="nav-font" href="order.html">Order</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        
         <div class="title">
             <h1>
                 Order
@@ -38,7 +60,7 @@
         </div>
         
         <div class="dropdown cakeTypes">
-            <button class="btn dropdown-toggle cakeTypes" data-toggle="dropdown">Types of Cakes</button>
+            <button class="btn dropdown-toggle cakeTypes" data-toggle="dropdown">Product Types</button>
             <div class="dropdown-menu">
                 <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#englishModal">Type1</div></a>
                 <a href="#"><div class="dropdown-item" data-toggle="modal" data-target="#mathModal">Type2</div></a>
@@ -94,11 +116,15 @@
                         <h1>Cake 1</h1>
                     </div>
                     <div class="modal-body">
-                        
                         <img src="cake pics/vanilla cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
-                        <p>qty</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="number">QTY:</label>
+                                <input id="qty" type="number" name="qty" min="0"/>
+                            </div>
+                        </form>
                         <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
@@ -115,7 +141,12 @@
                         <img src="cake pics/chocolate cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
-                        <p>qty</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="number">QTY:</label>
+                                <input id="qty" type="number" name="qty" min="0"/>
+                            </div>
+                        </form>
                         <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
@@ -132,7 +163,12 @@
                         <img src="cake pics/red velvet.jpeg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
-                        <p>qty</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="number">QTY:</label>
+                                <input id="qty" type="number" name="qty" min="0"/>
+                            </div>
+                        </form>
                         <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>
@@ -149,7 +185,12 @@
                         <img src="cake pics/strawberry cake.jpg" class="modalImg">
                         <p>detailed description</p>
                         <p>price</p>
-                        <p>qty</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="number">QTY:</label>
+                                <input id="qty" type="number" name="qty" min="0"/>
+                            </div>
+                        </form>
                         <a href="checkout.html"><button class="checkout">checkout now</button></a>
                     </div>
                 </div>

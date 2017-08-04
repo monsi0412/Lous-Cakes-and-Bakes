@@ -5,6 +5,12 @@ h1{
     font-size:72px;
 }
 
+@media(max-width: 720px) {
+  h1 {
+    font-size: 24pt;
+  }
+}
+
 p{
     font-family: 'Lancelot', cursive;    
 }
@@ -18,35 +24,51 @@ body{
 .lightGray{
     background-color: #E0E0E0;
     color: black;
+    width:25%;
 }
 .darkGray{
     background-color: #BDBDBD;
     color: white;
+    width:25%;
 }
 #link-home:visited, #link-home:link, #link-home:active, #link-home:hover{
     text-decoration: none;
     color:black;
 }
 #flourish-left, #flourish-right{
-    width:225px;
-    display:inline-block;
+    width:230px;
+    /*display:inline-block;*/
 }
-#flourish-left{
-    float:left;
-    margin-left:10%;
-}
-#flourish-right{
-    float:right;
-    margin-right:10%;
-}
+/*#flourish-left{*/
+/*    float:left;*/
+/*    margin-left:10%;*/
+/*}*/
+/*#flourish-right{*/
+/*    float:right;*/
+/*    margin-right:10%;*/
+/*}*/
 #shopping-cart{
     height:30px;
     float:right;
     margin-right:2%;
 }
-ul.nav-pills > li{
-    width: 24.88%;
-    text-align: center;
+/*ul.nav-pills > li{*/
+/*    width: 24.88%;*/
+/*    text-align: center;*/
+/*}*/
+#navBar{
+    width:100%;
+    padding:0;
+    margin:0;
+    border:0;
+}
+#navbarCollapsed{
+    width:50px;
+    height: 30px;
+    float:left;
+}
+.icon-bar{
+    background-color: black;
 }
 .nav-font{
     font-family: 'Lancelot', cursive;
@@ -117,7 +139,11 @@ ul.nav-pills > li{
     margin-top:10%;
 }
 #reviews p{
+    text-align: center;
     font-size:25px;
+}
+#spacer{
+    height:50px;
 }
 
 /*About page only*/
@@ -128,8 +154,8 @@ ul.nav-pills > li{
 }
 #aboutUsImg{
     margin:10px;
-    border: 1px dashed #ddd;
-	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+ /*   border: 1px dashed #ddd;*/
+	/*box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;*/
 }
 #aboutUs{
     font-size:25px;
@@ -143,17 +169,19 @@ ul.nav-pills > li{
 
 /*Contact page only */
 
-#map{
-    float:right;
-    margin-right:5%;
-    margin-bottom: 5%
+#contactForm{
+    height:300px;
+    width:400px;
+    float:left;
+    margin-left:5%;
 }
 .address{
-    float:left;
-    margin-left: 5%;
     font-family: 'Lancelot', cursive;
     font-size:24px;
     margin-top:10%;
+}
+#message{
+    height:100px;
 }
 
 /*Order page only*/
@@ -187,6 +215,9 @@ ul.nav-pills > li{
 }
 .modal-header{
     height:95px;
+}
+#qty{
+    width:60px;
 }
 .checkout{
 
