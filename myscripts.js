@@ -2,8 +2,9 @@
 
 $(document).ready(function(){
     
-$("").click(function(){
-    
+$(".checkout").click(function(){
+    var quantity = $(".qty").val();
+    console.log(quantity);
 });
     
     

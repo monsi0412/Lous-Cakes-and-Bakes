@@ -9,26 +9,45 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lancelot|League+Script|Sacramento|Tangerine" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link rel="icon" href="http://content.mycutegraphics.com/graphics/cats/gray-cat-head.png">
     </head>
     <body>
-        <div id="header" class="row">
-            <img id="flourish-left" src="flourishes/flourish-left.png">
-            <a href="checkout.html"><img id="shopping-cart" src="flourishes/shopping cart.png"></a>
-            <img id="flourish-right" src="flourishes/flourish.png">
-            <h1>
-                <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
-            </h1>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <ul class="nav nav-pills">
-                        <li class="lightGray"><a class="nav-font" href="about.html">About</a></li>
-                        <li class="darkGray"><a class="nav-font" href="contact.html">Contact</a></li>
-                        <li class="lightGray"><a class="nav-font" href="gallery.html">Gallery</a></li>
-                        <li class="darkGray"><a class="nav-font" href="order.html">Order</a></li>
-                    </ul>
+         <div id="header" class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+                <img id="flourish-left" src="flourishes/flourish-left.png" class="img-responsive">
+            </div>
+            <div class="col-xs-6">
+                <h1>
+                    <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
+                </h1>
+            </div>
+            <div class="col-xs-2">
+                <img id="flourish-right" src="flourishes/flourish.png" class="img-responsive">
+            </div>
+            <a href="checkout.html"><img id="shopping-cart" class="img-responsive" src="flourishes/shopping cart.png"></a>
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="navbarCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div>
+            <div class="container" id="navBar">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <nav class="navbar navbar-default">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="lightGray"><a class="nav-font" href="about.html">About</a></li>
+                            <li class="darkGray"><a class="nav-font" href="contact.html">Contact</a></li>
+                            <li class="lightGray"><a class="nav-font" href="gallery.html">Gallery</a></li>
+                            <li class="darkGray"><a class="nav-font" href="order.html">Order</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </div>
         <div class="title">
             <h1>
@@ -36,24 +55,54 @@
             </h1>
             <img id="under-flourish" src="flourishes/under flourish.png">
         </div>
-        <address class="address">
-            <strong>Lou's Cakes and Bakes</strong><br>
-            95 Washington Street<br>
-            Hoboken, NJ 07030<br>
-            <abbr title="Phone">P:</abbr> (917) 566-7564
-        </address>
-
-        <address class="address">
-            <strong>Peter</strong><br>
-            <a href="mailto:#">pwjablonski@gmail.com</a>
-        </address>
         
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24199.608036406535!2d-73.98763854999999!3d40.697076700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575f52ce7031%3A0xeec298dac8d6e0e6!2s95+Washington+Street%2C+Hoboken%2C+NJ!5e0!3m2!1sen!2sus!4v1501614818388" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+                <address class="address">
+                    <strong>Lou's Cakes and Bakes</strong><br>
+                    95 Washington Street<br>
+                    Hoboken, NJ 07030<br>
+                    <abbr title="Phone">P:</abbr> (917) 566-7564
+                </address>    
+            </div>
+            <div class="col-xs-2">
+                <address class="address">
+                    <strong>Peter</strong><br>
+                    <a href="mailto:#">pwjablonski@gmail.com</a>
+                </address>    
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-6">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24199.608036406535!2d-73.98763854999999!3d40.697076700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575f52ce7031%3A0xeec298dac8d6e0e6!2s95+Washington+Street%2C+Hoboken%2C+NJ!5e0!3m2!1sen!2sus!4v1501614818388" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        
+        <div id="contactForm" >
+            <form action="https://formspree.io/pjwablonski@gmail.com" method="POST" >
+                <h3>Send us a message</h3>
+                <div class="form-group">
+                    <label class="contactLabel">Name:</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="contactLabel">Email:</label>
+                    <input type="email" name="_replyto" class="form-control">
+                </div>
+                <div class="form-group">
+                    <labe class="contactLabel"l>Message:</label>
+                    <textarea id="message" type="textarea" name="message"></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        
         <footer>
             <div id="footer">
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+                <a href="https://www.instagram.com/sweetloucakesandbakes/" target="_blank" class="fa fa-instagram"></a>
                 <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
             </div>
         </footer>
