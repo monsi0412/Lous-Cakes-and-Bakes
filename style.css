@@ -8,10 +8,10 @@ h3{
     font-family: 'Sacramento', cursive;
     font-size:40px;
 }
-@media(max-width: 720px) {
-  h1 {
-    font-size: 24px;
-  }
+@media(max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
 }
 
 p, label{
@@ -69,6 +69,15 @@ body{
     width:50px;
     height: 30px;
     float:left;
+}
+@media(max-width: 768px) {
+    .nav-font{
+        font-size: 10px;
+        height:20px;
+    }
+    .lightGray{
+        font-size:10px;
+    }
 }
 .icon-bar{
     background-color: black;
@@ -148,17 +157,25 @@ body{
 #spacer{
     height:50px;
 }
+@media(max-width: 768px) {
+    .reviewsText{
+        font-size: 12px;
+    }
+}
+
 
 /*About page only*/
 
 #aboutPgImg{
     display:block;
     margin:0 auto;    
+    height:400px;
+    border: 1px dashed #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
 }
-#aboutUsImg{
-    margin:10px;
- /*   border: 1px dashed #ddd;*/
-	/*box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;*/
+#aboutUsImgDiv{
+    margin-top: -10px;
+    margin-bottom:20px;
 }
 #aboutUs{
     font-size:25px;
@@ -198,7 +215,7 @@ body{
 }
 .descriptionBtn{
     font-family: 'Lancelot', cursive; 
-    font-size:15px;
+    font-size:18px;
     
 }
 .orderDes{
@@ -225,6 +242,14 @@ body{
 #qty{
     width:60px;
 }
-.checkout{
-
-}
+/*@media(max-width: 768px) {*/
+/*    .description {*/
+/*        font-size: 15px;*/
+/*    }*/
+/*    .descriptionBtn{*/
+/*        font-size:12px;*/
+/*    }*/
+/*    .cakeTypes{*/
+/*        font-size:12px;*/
+/*    }*/
+/*}*/
