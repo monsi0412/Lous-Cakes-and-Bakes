@@ -42,23 +42,12 @@ body{
     width:230px;
     /*display:inline-block;*/
 }
-/*#flourish-left{*/
-/*    float:left;*/
-/*    margin-left:10%;*/
-/*}*/
-/*#flourish-right{*/
-/*    float:right;*/
-/*    margin-right:10%;*/
-/*}*/
+
 #shopping-cart{
     height:30px;
     float:right;
     margin-right:2%;
 }
-/*ul.nav-pills > li{*/
-/*    width: 24.88%;*/
-/*    text-align: center;*/
-/*}*/
 #navBar{
     width:100%;
     padding:0;
@@ -70,15 +59,6 @@ body{
     height: 30px;
     float:left;
 }
-@media(max-width: 768px) {
-    .nav-font{
-        font-size: 10px;
-        height:20px;
-    }
-    .lightGray{
-        font-size:10px;
-    }
-}
 .icon-bar{
     background-color: black;
 }
@@ -86,6 +66,9 @@ body{
     font-family: 'Lancelot', cursive;
     color:black;
     font-size:25px;
+}
+#bs-example-navbar-collapse-1{
+    font-size:1px;
 }
 #under-flourish{
     width:300px;
@@ -192,6 +175,9 @@ body{
 
 /*Contact page only */
 
+#contactEmpty{
+    margin-left:-5%;
+}
 #contactForm{
     height:300px;
     width:400px;
@@ -202,11 +188,19 @@ body{
     font-family: 'Lancelot', cursive;
     font-size:24px;
     margin-top:10%;
+    margin-left:5%;
+}
+#map{
+    margin-left:5%;
 }
 #message{
     height:100px;
 }
 .contactLabel{
+    font-size:20px;
+}
+#contactSubmit{
+    font-family: 'Lancelot', cursive;
     font-size:20px;
 }
 
@@ -245,14 +239,14 @@ body{
 #qty{
     width:60px;
 }
-/*@media(max-width: 768px) {*/
-/*    .description {*/
-/*        font-size: 15px;*/
-/*    }*/
-/*    .descriptionBtn{*/
-/*        font-size:12px;*/
-/*    }*/
-/*    .cakeTypes{*/
-/*        font-size:12px;*/
-/*    }*/
-/*}*/
+@media(max-width: 768px) {
+    .description {
+        font-size: 15px;
+    }
+    .descriptionBtn{
+        font-size:12px;
+    }
+    .cakeTypes{
+        font-size:12px;
+    }
+}
