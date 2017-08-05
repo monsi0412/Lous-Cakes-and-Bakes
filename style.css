@@ -186,6 +186,9 @@ body{
     margin:0 auto;
     margin-bottom: 40px;
 }
+#aboutSpacer{
+    height:100px;
+}
 
 /*Contact page only */
 
