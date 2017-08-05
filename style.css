@@ -27,12 +27,10 @@ body{
 .lightGray{
     background-color: #E0E0E0;
     color: black;
-    width:25%;
 }
 .darkGray{
     background-color: #BDBDBD;
     color: white;
-    width:25%;
 }
 #link-home:visited, #link-home:link, #link-home:active, #link-home:hover{
     text-decoration: none;
@@ -66,9 +64,6 @@ body{
     font-family: 'Lancelot', cursive;
     color:black;
     font-size:25px;
-}
-#bs-example-navbar-collapse-1{
-    font-size:1px;
 }
 #under-flourish{
     width:300px;
@@ -179,10 +174,11 @@ body{
     margin-left:-5%;
 }
 #contactForm{
-    height:300px;
+    height:500px;
     width:400px;
     float:left;
     margin-left:5%;
+    margin-bottom:15px;
 }
 .address{
     font-family: 'Lancelot', cursive;
@@ -194,7 +190,8 @@ body{
     margin-left:5%;
 }
 #message{
-    height:100px;
+    height:150px;
+    width:400px;
 }
 .contactLabel{
     font-size:20px;
@@ -202,6 +199,9 @@ body{
 #contactSubmit{
     font-family: 'Lancelot', cursive;
     font-size:20px;
+}
+#lou{
+    height:450px;
 }
 
 /*Order page only*/
