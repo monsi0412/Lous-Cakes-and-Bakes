@@ -2,17 +2,71 @@
 <html>
 
 <head>
-    <title>Gallery</title>
+    <title>Test Page</title>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="myscripts.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lancelot|League+Script|Sacramento|Tangerine" rel="stylesheet">
-    <link rel="stylesheet" href="images.css" type="text/css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="https://content.mycutegraphics.com/graphics/cats/gray-cat-head.png">
+    
+    <style type="text/css">
+        img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -58,17 +112,39 @@
             </div>
         </div>
     </div>
-    <div class="title">
-        <h1>
-            Gallery
-        </h1>
-        <img id="under-flourish" src="flourishes/under flourish.png">
+    
+    <center>
+        <h2>Cake</h2>
+    </center>
+    <hr>
+
+
+    <center>
+        <h2>Cookies</h2>
+    </center>
+    <hr> gcghc
+    <center>
+        <h2>Cupcakes</h2>
+    </center>
+    <hr> bcjvj
+    <center>
+        <h2>Scones</h2>
+    </center>
+    <hr> jvc cgcghc
+    
+    class="img-responsive"
+    
+    <div >
+        
     </div>
 
-    <img id="one" class="gallery img-rounded" src="cake pics/jeremy.jpg">
-    <img id="two" class="gallery img-rounded" src="cake pics/lanty.jpg">
-    <img id="three" class="gallery img-circle" src="cake pics/caramel cake.jpg">
-    <img id="four" class="gallery img-rounded" src="cake pics/chocolate cake.jpg">
+
+    <!-- 
+    
+    <img id="one" class="img-responsive" gallery img-rounded" src="cake pics/jeremy.jpg">
+    <img id="two" class="img-responsive gallery img-rounded" src="cake pics/lanty.jpg">
+    <img id="three" class="img-responsive gallery img-circle" src="cake pics/caramel cake.jpg">
+    <img id="four" class="img-responsivegallery img-rounded" src="cake pics/chocolate cake.jpg">
     <img id="five" class="gallery" src="cake pics/chocolatecake.jpg">
     <img id="six" class="gallery img-rounded" src="cake pics/elegant cake1.jpg">
     <img id="seven" class="gallery" src="cake pics/elegant cake2.jpg">
@@ -83,38 +159,7 @@
     <!--<img id="sixteen" class="gallery img-rounded" src="cake pics/vanilla cake.jpg">-->
     <!--<img id="seventeen" class="gallery img-rounded" src="cake pics/walnut cake.jpg">-->
 
-
-
-
-
-
-
-    <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-7"><img id="one" class="gallery img-rounded" src="cake pics/jeremy.jpg"></div>
-        <div class="col-md-5"><img id="two" class="gallery img-rounded" src="cake pics/lanty.jpg"></div>
-        <div class="col-md-3">
-            
-            
-    <img id="five" class="gallery" src="cake pics/chocolatecake.jpg">
-    <img id="six" class="gallery img-rounded" src="cake pics/elegant cake1.jpg">
-        </div>
-        <div class="col-md-3"><img id="three" class="gallery img-circle" src="cake pics/caramel cake.jpg"></div>
-        <div class="col-md-3"></div>
-        <div class="col-md-3">6</div>
-    </div>
-</div>
-
-    <div class="container">
-        <footer>
-            <div id="footer">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/sweetloucakesandbakes/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
-            </div>
-        </footer>
-    </div>
+    -->
 </body>
 
 </html>

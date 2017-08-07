@@ -14,7 +14,7 @@ h3{
     }
 }
 
-p, label{
+p, label, input{
     font-family: 'Lancelot', cursive;    
 }
 
@@ -167,24 +167,28 @@ body{
 #aboutSpacer{
     height:100px;
 }
+@media(max-width: 768px) {
+    #aboutUs{
+        font-size: 14px;
+    }
+    #aboutPgImg{
+        height:250px;
+    }
+}
+
 
 /*Contact page only */
 
-#contactEmpty{
-    margin-left:-5%;
-}
 #contactForm{
     height:500px;
     width:400px;
     float:left;
-    margin-left:5%;
     margin-bottom:15px;
 }
 .address{
     font-family: 'Lancelot', cursive;
     font-size:24px;
     margin-top:10%;
-    margin-left:5%;
 }
 #map{
     margin-left:5%;
@@ -203,6 +207,23 @@ body{
 #lou{
     height:450px;
 }
+@media(max-width: 768px) {
+    #map{
+        height:300px;
+        width:90%;
+    }
+    .address, .contactLabel, .input{
+        font-size:14px;
+    }
+    #contactForm{
+        width:90%;
+    }
+    h3{
+        font-size:36px;
+    }
+}
+
+
 
 /*Order page only*/
 
@@ -219,7 +240,13 @@ body{
     margin-right:15px;
     margin-left:-15px;
 }
-.modal p{
+.orderOption{
+    margin-bottom:20px;
+}
+.orderOption img{
+    height:300px;
+}
+.modal p, label, input{
     font-size:20px;
 }
 .modal h1{
@@ -248,5 +275,8 @@ body{
     }
     .cakeTypes{
         font-size:12px;
+    }
+    .orderOption img{
+        height:100px;
     }
 }

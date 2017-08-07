@@ -9,25 +9,29 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lancelot|League+Script|Sacramento|Tangerine" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="http://content.mycutegraphics.com/graphics/cats/gray-cat-head.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://content.mycutegraphics.com/graphics/cats/gray-cat-head.png">
     </head>
     <body>
-         <div id="header" class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-2">
-                <img id="flourish-left" src="flourishes/flourish-left.png" class="img-responsive">
-            </div>
-            <div class="col-xs-6">
-                <h1>
-                    <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
-                </h1>
-            </div>
-            <div class="col-xs-2">
-                <img id="flourish-right" src="flourishes/flourish.png" class="img-responsive">
-            </div>
-            
-            <a href="checkout.html"><img id="shopping-cart" class="img-responsive" src="flourishes/shopping cart.png"></a>
+         <div class="container-fluid">
+            <div id="header" class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-2">
+                    <img id="flourish-left" src="flourishes/flourish-left.png" class="img-responsive">
+                </div>
+                <div class="col-xs-6">
+                    <h1>
+                        <a id="link-home" href="index.html">Lou's Cakes and Bakes</a>
+                    </h1>
+                </div>
+                <div class="col-xs-2">
+                    <img id="flourish-right" src="flourishes/flourish.png" class="img-responsive">
+                </div>
+                
+                <a href="checkout.html"><img id="shopping-cart" class="img-responsive" src="flourishes/shopping cart.png"></a>
+            </div>    
         </div>
+        
         
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="navbarCollapsed">
@@ -65,15 +69,15 @@
         <div class="dropdown cakeTypes">
             <button class="btn dropdown-toggle cakeTypes" data-toggle="dropdown">Product Types</button>
             <div class="dropdown-menu">
-                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#englishModal">Type1</div></a>
-                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#mathModal">Type2</div></a>
-                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#historyModal">Type3</div></a>
-                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#astronomyModal">Type4</div></a>
+                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#">Type1</div></a>
+                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#">Type2</div></a>
+                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#">Type3</div></a>
+                <a href="#"><div class="dropdown-item cakeTypes" data-toggle="modal" data-target="#">Type4</div></a>
             </div>
         </div>
         
         
-        <div id="holdsOptions" class="container-fluid" align="center">
+        <div id="holdsOptions" class="container-fluid">
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="orderOption col-xs-3">
@@ -83,6 +87,7 @@
                     <p class="description">description</p>
                     <button class="descriptionBtn" data-toggle="modal" data-target="#cake1Modal">order now</button>
                 </div>
+                <div class="col-xs-1"></div>
                 <div class="orderOption orderOptionRight col-xs-3">
                     <img src="cake pics/chocolate cake.jpg" class="orderPgCake img-thumbnail">
                 </div>
@@ -100,15 +105,36 @@
                     <p class="description">description</p>
                     <button class="descriptionBtn" data-toggle="modal" data-target="#cake3Modal">order now</button>
                 </div>
+                <div class="col-xs-1"></div>
                 <div class="orderOption orderOptionRight col-xs-3">
-                    <img src="cake pics/strawberry cake.jpg" class="orderPgCake img-thumbnail">
+                    <img src="cake pics/strawberry cake2.jpg" class="orderPgCake img-thumbnail">
                 </div>
                 <div class="col-xs-1 orderDes">
                     <p class="description">description</p>
                     <button class="descriptionBtn" data-toggle="modal" data-target="#cake4Modal">order now</button>
                 </div>
             </div>
-                
+            <div class="row">
+                <div class="col-xs-2"></div> 
+                <div class="orderOption orderOptionLeft col-xs-3">
+                        <img src="cake pics/custom.jpg" class="orderPgCake img-thumbnail">
+                </div>
+                <div class="col-xs-1 orderDes">
+                    <p class="description">description</p>
+                    <button class="descriptionBtn" data-toggle="modal" data-target="#cake5Modal">order now</button>
+                </div>
+                <!--<div class="col-xs-1"></div>-->
+                <!--<div class="orderOption orderOptionRight col-xs-3">-->
+                <!--    <img src="cake pics/strawberry cake.jpg" class="orderPgCake img-thumbnail">-->
+                <!--</div>-->
+                <!--<div class="col-xs-1 orderDes">-->
+                <!--    <p class="description">description</p>-->
+                <!--    <button class="descriptionBtn" data-toggle="modal" data-target="#cake4Modal">order now</button>-->
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-xs-12" id="spacer"></div>
+            </div>
         </div>
 
         <div id="cake1Modal" class="modal">
@@ -127,8 +153,9 @@
                                 <label for="number">QTY:</label>
                                 <input class="qty" type="number" name="qty" min="0"/>
                             </div>
+                            <input class="checkout" type="button" value="add to cart"/>
                         </form>
-                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
+                        <a href="checkout.html"><button class="checkout">Go to Checkout</button></a>
                     </div>
                 </div>
             </div>       
@@ -149,8 +176,10 @@
                                 <label for="number">QTY:</label>
                                 <input class="qty" type="number" name="qty" min="0"/>
                             </div>
+                            <input class="checkout" type="button" value="add to cart"/>
                         </form>
-                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
+                        <!--<a href="checkout.html"><button class="checkout">checkout now</button></a>-->
+                    <!--<button class="checkout">checkout now</button>-->
                     </div>
                 </div>
             </div>       
@@ -171,8 +200,10 @@
                                 <label for="number">QTY:</label>
                                 <input class="qty" type="number" name="qty" min="0"/>
                             </div>
+                            <input class="checkout" type="button" value="add to cart"/>
                         </form>
-                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
+                        <!--<a href="checkout.html"><button class="checkout">checkout now</button></a>-->
+                        <!--<input type="button" value="add to cart"/>-->
                     </div>
                 </div>
             </div>       
@@ -193,20 +224,66 @@
                                 <label for="number">QTY:</label>
                                 <input class="qty" type="number" name="qty" min="0"/>
                             </div>
+                            <input class="checkout" type="button" value="add to cart"/>
                         </form>
-                        <a href="checkout.html"><button class="checkout">checkout now</button></a>
+                        <!--<a href="checkout.html"><button class="checkout">checkout now</button></a>-->
                     </div>
                 </div>
             </div>       
         </div>
+        <div id="cake5Modal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1>Customize</h1>
+                    </div>
+                    <div class="modal-body">
+                        <img src="cake pics/custom.jpg" class="modalImg img-responsive">
+                        <p>Customize your own cake:</p>
+                        <p>price: TBD</p>
+                        <form action="https://formspree.io/pwjablonski@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label for="flavor">Flavor:</label>
+                                <input class="form-control" type="text" name="flavor"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="layers">Layers</label>
+                                <input class="form-control" type="number" name="layers"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="filling">Type of Filling:</label>
+                                <input class="form-control" type="text" name="filling"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="frosting-flavor">Frosting Flavor:</label>
+                                <input class="form-control" type="text" name=" frosting-flavor"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="frosting-color">Frosting Color:</label>
+                                <input class="form-control" type="text" name="frosting-color" min="1"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="frosting-color">Any special instructions:</label>
+                                <input class="form-control" type="text" name="frosting-color" min="1"/>
+                            </div>
+                            <input type="submit" value="add to cart" id="orderSubmit">
+                        </form>
+                        <!--<a href="checkout.html"><button class="checkout">checkout now</button></a>-->
+                    </div>
+                </div>
+            </div>       
+        </div> 
         
-        <footer>
-            <div id="footer">
-                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/sweetloucakesandbakes/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
-            </div>
-        </footer>
+        <div class="container">
+            <footer>
+                <div id="footer">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/sweetloucakesandbakes/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
