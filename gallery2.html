@@ -9,9 +9,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lancelot|League+Script|Sacramento|Tangerine" rel="stylesheet">
-    <link rel="stylesheet" href="images.css" type="text/css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://content.mycutegraphics.com/graphics/cats/gray-cat-head.png">
+
+
+    <style type="text/css">
+        div#masonry {
+            display: -ms-flexbox;
+            -ms-flex-direction: column;
+            -ms-flex-wrap: wrap;
+            /*display: flex;*/
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100vw;
+            font-size: 0;
+            align-items: stretch;
+            border-spacing: 50px;
+        }
+
+        div#masonry img {
+            /*height:400px;*/
+            width: 33.3%;
+            transition: .8s opacity;
+        }
+
+        div#masonry:hover img {
+            opacity: 0.3;
+        }
+
+        div#masonry:hover img:hover {
+            opacity: 1;
+        }
+
+        @supports not (flex-wrap: wrap) {
+            div#masonry {
+                display: block;
+            }
+            div#masonry img {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            div#masonry {
+                height: 200vw;
+            }
+            div#masonry img {
+                width: 50%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +68,7 @@
     <div id="header" class="row">
         <div class="col-xs-1"></div>
         <div class="col-xs-2">
-            <img id="flourish-left" src="flourishes/flourish-left.png" class="img-responsive">
+            <img id="flourish-left" src="flourishes/flourish-left.png">
         </div>
         <div class="col-xs-6">
             <h1>
@@ -27,10 +76,10 @@
             </h1>
         </div>
         <div class="col-xs-2">
-            <img id="flourish-right" src="flourishes/flourish.png" class="img-responsive">
+            <img id="flourish-right" src="flourishes/flourish.png">
         </div>
 
-        <a href="checkout.html"><img id="shopping-cart" class="img-responsive" src="flourishes/shopping cart.png"></a>
+        <a href="checkout.html"><img id="shopping-cart"  src="flourishes/shopping cart.png"></a>
     </div>
 
     <div class="navbar-header">
@@ -63,74 +112,112 @@
         </h1>
         <img id="under-flourish" src="flourishes/under flourish.png">
     </div>
+        
+        <!--<div class="row">-->
+        <!--    <div class="col-xs-3">-->
+        <!--        <img id="one" class="gallery img-rounded" src="cake pics/jeremy.jpg">-->
+        <!--    </div>-->
 
-<div class="container">
-    
-    <div class="row">
-        <div class="col-xs-3">
-           <img id="one" class="gallery img-rounded" src="cake pics/jeremy.jpg"> 
-        </div>
+        <!--    <div class="col-xs-5 col-md-4"></div>-->
+
+        <!--    <div class="col-xs-3">-->
+        <!--        <img id="two" class="gallery img-rounded" src="cake pics/lanty.jpg">-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--</div>-->
         
-        <div class="col-xs-2">
-            <img id="two" class="gallery img-rounded" src="cake pics/lanty.jpg">
-        </div>   
-    </div>
-        
-    <div class="row"></div>
         <!--<div>-->
         <!--    <img id="three" class="gallery img-circle" src="cake pics/caramel cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="four" class="gallery img-rounded" src="cake pics/chocolate cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="five" class="gallery" src="cake pics/chocolatecake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="six" class="gallery img-rounded" src="cake pics/elegant cake1.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="seven" class="gallery" src="cake pics/elegant cake2.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="eight" class="gallery" src="cake pics/elegant cake3.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="nine" class="gallery" src="cake pics/naked cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="ten" class="gallery img-rounded" src="cake pics/ombre-cake-blueberries.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="eleven" class="gallery img-rounded" src="cake pics/red velvet.jpeg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="twelve" class="gallery img-circle" src="cake pics/small cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="thirteen" class="gallery img-rounded" src="cake pics/small wedding cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="fourteen" class="gallery img-rounded" src="cake pics/small winter cake.jpg">-->
         <!--</div>-->
-        
+
         <!--<div>-->
         <!--    <img id="fifteen" class="gallery img-rounded" src="cake pics/strawberry cake.jpg">-->
         <!--</div>-->
-        
-</div>
 
+ 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="masonry">
+    <img id="one" class="gallery img-rounded" src="cake pics/jeremy.jpg">
+    <img id="four" class="gallery img-rounded" src="cake pics/chocolate cake.jpg">
+    <img id="eleven" class="gallery img-rounded" src="cake pics/red velvet.jpeg">
+
+    <img id="two" class="gallery img-rounded" src="cake pics/lanty.jpg">
+    <img id="three" class="gallery img-circle" src="cake pics/caramel cake.jpg">
     
-    </body>
+    <img id="five" class="gallery" src="cake pics/chocolatecake.jpg">
+    <img id="six" class="gallery img-rounded" src="cake pics/elegant cake1.jpg">
+    <img id="seven" class="gallery" src="cake pics/elegant cake2.jpg">
+    <img id="eight" class="gallery" src="cake pics/elegant cake3.jpg">
+    <img id="nine" class="gallery" src="cake pics/naked cake.jpg">
+    <img id="ten" class="gallery img-rounded" src="cake pics/ombre-cake-blueberries.jpg">
+    
+    <img id="twelve" class="gallery img-circle" src="cake pics/small cake.jpg">
+    <img id="thirteen" class="gallery img-rounded" src="cake pics/small wedding cake.jpg">
+    <img id="fourteen" class="gallery img-rounded" src="cake pics/small winter cake.jpg">
+    <img id="fifteen" class="gallery img-rounded" src="cake pics/strawberry cake.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        <!--<img src "">-->
+        
+        
+        <!--<img id="fourteen" class="gallery img-rounded" src="cake pics/small winter cake.jpg">-->
+        <!--<img id="fifteen" class="gallery img-rounded" src="cake pics/strawberry cake.jpg">-->
+    </section>
+
+
+
+-->
+</body>
+
 </html>
