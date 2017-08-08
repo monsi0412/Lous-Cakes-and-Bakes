@@ -10,7 +10,7 @@ h3{
 }
 @media(max-width: 768px) {
     h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
 }
 
@@ -38,7 +38,6 @@ body{
 }
 #flourish-left, #flourish-right{
     width:230px;
-    /*display:inline-block;*/
 }
 
 #shopping-cart{
@@ -71,7 +70,20 @@ body{
     margin:0 auto;
     margin-top:-83px;
 }
-
+@media(max-width: 768px) {
+    .nav-font{
+        font-size: 18px;
+        height:40px;
+    }
+    #flourish-left, #flourish-right{
+        width:75px;
+        margin-top: 30px;
+        margin-left:-50%;
+    }
+    #shopping-cart{
+        height:15px;
+    }
+}
 
 
 /*Footer Elements*/
@@ -113,7 +125,17 @@ body{
     left:50%;
     margin-left:-150px;
 }
-
+@media(max-width: 768px) {
+    .fa{
+        padding: 10px;
+        font-size: 15px;
+        width: 32px;
+    }
+    #footer{
+        width:225px;
+        margin-left:-112.5px;
+    }
+}
 
 
 
@@ -204,22 +226,24 @@ body{
     font-family: 'Lancelot', cursive;
     font-size:20px;
 }
-#lou{
-    height:450px;
-}
 @media(max-width: 768px) {
     #map{
         height:300px;
         width:90%;
     }
     .address, .contactLabel, .input{
-        font-size:14px;
+        font-size:18px;
+        text-align:center;
     }
     #contactForm{
         width:90%;
     }
+    #message{
+        width:95%;
+    }
     h3{
         font-size:36px;
+        text-align:center;
     }
 }
 
@@ -242,6 +266,7 @@ body{
 }
 .orderOption{
     margin-bottom:20px;
+    margin-top: 20px;
 }
 .orderOption img{
     height:300px;
@@ -277,6 +302,11 @@ body{
         font-size:12px;
     }
     .orderOption img{
-        height:100px;
+        height:150px;
+    }
+    .orderOption, .orderDes{
+        margin:0 auto;
+        text-align:center;
+        margin-top: 10px;
     }
 }
