@@ -7,119 +7,123 @@
 
 #one{
     height: 430px;
-    width: 600px;
-    margin-left: 5%;
-    margin-top: 2%;
+    width: 100%;
+    /*margin-left: 5%;*/
+    /*margin-top: 2%;*/
     position: relative;
 }
 
 
 
 #two{
-    margin-bottom: 13%;
-    height: 250px;
-    width: 200px;
+    /*margin-bottom: 50%;*/
+    height: 230px;
+    width: 100%;
     position: relative;
 }
 
 #three{
-    margin-bottom: 13%;
-    height: 250px;
-    width: 200px;
+    /*margin-bottom: 13%;*/
+    height: 200px;
+    width: 100%;
     position: relative;
 }
 
 #four{
-    height: 155px;
-    width: 190px;
-    margin-top: 20%;
-    position: absolute;
-    margin-left: -440px;
-    margin-top: 300px;
+    height: 230px;
+    width: 100%;
+    /*margin-top: 20%;*/
+    /*position: absolute;*/
+    /*margin-left: -440px;*/
+    /*margin-top: 300px;*/
     
 }
 
 #five{
-    position: absolute;
-    height: 155px;
-    width: 100px;
-    margin-top: 300px;
-    margin-left: -245px;
+    /*position: absolute;*/
+    height: 200px;
+    width: 100%;
+    /*margin-top: 300px;*/
+    /*margin-left: -245px;*/
     
 }
 #six{
-    position: absolute;
-    height: 255px;
-    width: 160px;
-    margin-top: 23px;
+    /*position: absolute;*/
+    height: 200px;
+    width: 100%;
+    /*margin-top: 23px;*/
 }
 
 #seven{
-    position: absolute;
-    margin-top: 300px;
-    height: 155px;
-    width: 100px;
-    margin-left: -140px;
+    /*position: absolute;*/
+    /*margin-top: 300px;*/
+    height: 400px;
+    width: 100%;
+    /*margin-left: -140px;*/
 }
 
 #eight{
-    position: absolute;
+    /*position: absolute;*/
     height: 155px;
-    width: 100px;
-    margin-top: 300px;
-    margin-left: -35px;
-}
+    width: 100%;
+/*    margin-top: 300px;*/
+/*    margin-left: -35px;*/
+/*}*/
 
 #nine{
-    position: absolute;
+    /*position: absolute;*/
     height: 155px;
-    width: 100px;
-    margin-top: 300px;
-    margin-left: 70px;
+    width: 100%;
+    /*margin-top: 300px;*/
+    /*margin-left: 70px;*/
     
 }
 
 #ten{
-    position: absolute;
-    margin-top: 480px;
-    margin-left: -1060px;
+    /*position: absolute;*/
+    /*margin-top: 480px;*/
+    /*margin-left: -1060px;*/
     height: 300px;
+    width: 100%;
 }
 
 #eleven{
-    position: absolute;
+    /*position: absolute;*/
     height:300px;
-    margin-top: 480px;
-    margin-left: -840px;
+    width: 100%;
+    /*margin-top: 480px;*/
+    /*margin-left: -840px;*/
 }
 
 #twelve{
-    position: absolute;
-    margin-top: 480px;
+    /*position: absolute;*/
+    /*margin-top: 480px;*/
     height: 300px;
-    margin-left: -420px;
+    width: 100%;
+    /*margin-left: -420px;*/
 }
 
 #thirteen{
-    position: absolute;
-    margin-top: 480px;
-    margin-left: 20px;
-    width: 150px;
+    /*position: absolute;*/
+    /*margin-top: 480px;*/
+    /*margin-left: 20px;*/
+    width: 100%;
     height: 180px;
 }
 
 #fourteen{
-    position: absolute;
-    margin-top: 480px;
+    /*position: absolute;*/
+    /*margin-top: 480px;*/
     height: 300px;
-    margin-left: -200px;
+    width: 100%;
+    /*margin-left: -200px;*/
 }
 
 #fifteen{
-    position: absolute;
+    /*position: absolute;*/
     height: 110px;
-    width: 170px;
-    margin-top: 670px;
+    width: 100%;
+    /*margin-top: 670px;*/
 }
 
 #sixteen{
