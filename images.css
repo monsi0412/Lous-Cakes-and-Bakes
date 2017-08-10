@@ -5,6 +5,23 @@
     margin:10px;
 }
 
+        div#hover img {
+            transition: .8s opacity;
+        }
+
+        div#hover:hover img {
+            opacity: 0.3;
+        }
+
+        div#hover:hover img:hover {
+            opacity: 1;
+        }
+        
+        
+/*    @media(max-width: 768px) {*/
+/*    
+/*}*/
+
 #one{
     height: 430px;
     width: 100%;
@@ -57,22 +74,22 @@
 #seven{
     /*position: absolute;*/
     /*margin-top: 300px;*/
-    height: 400px;
+    height: 500px;
     width: 100%;
     /*margin-left: -140px;*/
 }
 
 #eight{
     /*position: absolute;*/
-    height: 155px;
+    height: 230px;
     width: 100%;
 /*    margin-top: 300px;*/
 /*    margin-left: -35px;*/
 /*}*/
-
+}
 #nine{
     /*position: absolute;*/
-    height: 155px;
+    height: 230px;
     width: 100%;
     /*margin-top: 300px;*/
     /*margin-left: 70px;*/
@@ -83,7 +100,7 @@
     /*position: absolute;*/
     /*margin-top: 480px;*/
     /*margin-left: -1060px;*/
-    height: 300px;
+    height: 250px;
     width: 100%;
 }
 
@@ -98,7 +115,7 @@
 #twelve{
     /*position: absolute;*/
     /*margin-top: 480px;*/
-    height: 300px;
+    height: 250px;
     width: 100%;
     /*margin-left: -420px;*/
 }
@@ -114,22 +131,164 @@
 #fourteen{
     /*position: absolute;*/
     /*margin-top: 480px;*/
-    height: 300px;
+    height: 180px;
     width: 100%;
     /*margin-left: -200px;*/
 }
 
 #fifteen{
     /*position: absolute;*/
-    height: 110px;
+    height: 280px;
     width: 100%;
     /*margin-top: 670px;*/
 }
 
 #sixteen{
-    
+    height: 280px;
+    width: 100%; 
 }
 
 #seventeen{
-    
+    height: 280px;
+    width: 100%;    
+}
+
+#eighteen{
+    height:250px;
+    width: 100%;
+}
+
+#nineteen{
+    height:250px;
+    width:100%;
+}
+
+#twenty{
+    height:250px;
+    width:100%;    
+}
+
+#extra{
+    height: 250px;
+    width:100%;
+}
+
+#twentyone{
+    height:370px;
+    width:100%;    
+}
+
+#twentytwo{
+    height:540px;
+    width:100%;    
+}
+
+#twentythree{
+    height: 150px;
+    width:100%;    
+}
+
+#twentyfour{
+    height: 220px;
+    width:100%;    
+}
+
+#twentyfive{
+    height:150px;
+    width:100%;    
+}
+
+#twentysix{
+    height:200px;
+    width:100%;    
+}
+
+#twentyseven{
+    height:320px;
+    width:100%;    
+}
+
+/*#twentyeight{*/
+/*    height: 200px;*/
+/*    width:100%;    */
+/*}*/
+
+#twentynine{
+    height: 200px;
+    width:100%;    
+}
+
+#thirty{
+    height: 200px;
+    width:100%;    
+}
+
+#thirtyone{
+    height:200px;
+    width:100%;    
+}
+
+#thirtytwo{
+    height: 220px;
+    width:100%;    
+}
+
+#thirtythree{
+    height: 220px;
+    width:100%;    
+}
+
+#thirtyfour{
+    height: 220px;
+    width:100%;    
+}
+
+#thirtyfive{
+    height: 400px;
+    width:100%;    
+}
+
+#thirtysix{
+    height: 400px;
+    width:100%;    
+}
+
+#thirtyseven{
+    height:;
+    width:100%;    
+}
+
+#thirtyeight{
+    height:;
+    width:100%;    
+}
+
+#thirtynine{
+    height:;
+    width:100%;    
+}
+
+#fourty{
+    height:;
+    width:100%;    
+}
+
+#fourtyone{
+    height:;
+    width:100%;    
+}
+
+#fourtytwo{
+    height:;
+    width:100%;    
+}
+
+#fourtythree{
+    height:;
+    width:100%;    
+}
+
+#fourtyfour{
+    height:;
+    width:100%;    
 }

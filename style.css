@@ -8,9 +8,12 @@ h3{
     font-family: 'Grand Hotel', cursive;
     font-size:40px;
 }
+h5{
+    font-family: 'Grand Hotel', cursive;
+}
 @media(max-width: 768px) {
     h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
 }
 
@@ -62,7 +65,7 @@ body{
     width:300px;
     display:block;
     margin:0 auto;
-    margin-top:-83px;
+    margin-top:-80px;
 }
 #logo{
     width:800px;
@@ -70,7 +73,7 @@ body{
 }
 @media(max-width: 768px) {
     .nav-font{
-        font-size: 18px;
+        font-size: 20px;
         height:40px;
     }
     #shopping-cart{
@@ -161,7 +164,11 @@ body{
         font-size: 12px;
     }
     #homeFooter{
-        width:300px;
+    bottom: 10px;
+    left: 50%;
+        width:250px;
+        left:50%;
+        margin-left:-125px;
     }
 }
 
@@ -193,7 +200,7 @@ body{
 }
 @media(max-width: 768px) {
     #aboutUs{
-        font-size: 14px;
+        font-size: 18px;
     }
     #aboutPgImg{
         height:250px;
@@ -228,7 +235,7 @@ body{
 @media(max-width: 768px) {
     #map{
         height:300px;
-        width:90%;
+        width:95%;
     }
     .address, .contactLabel, .input{
         font-size:18px;
@@ -238,7 +245,6 @@ body{
         margin-bottom:100px;
     }
     #contactForm{
-        width:90%;
         margin:0 auto;
     }
     #message{
@@ -270,7 +276,6 @@ body{
     font-family: 'Lancelot', cursive; 
     font-size:18px;
     width:100px;
-    
 }
 .img-thumbnail{
     background:#3a3a3a;
@@ -327,6 +332,45 @@ body{
 }
 @media(max-width:992px){
     .orderOption, .orderDes{
+        text-align:center;
+    }
+}
+
+/*Checkout Page only*/
+
+#orderSummary{
+    border-image:url(http://www.pngall.com/wp-content/uploads/2016/04/Decorative-Border-PNG-Clipart-180x180.png) 30 round;
+    /*height:90%;*/
+    /*width:90%;*/
+    margin:0 auto;
+    /*border:1px dashed black;*/
+}
+#orderSummary img{
+    height:300px;
+}
+#orderSummary p{
+    font-size:25px;
+}
+.orderSumDes{
+    margin-top:10%;
+}
+#orderTotal{
+    font-size:25px;
+    text-align:center;
+}
+@media(max-width: 768px) {
+    #orderSummary img{
+        height:200px;
+    }
+    #orderSummary p{
+        font-size:20px;
+    }
+    .orderSumDes{
+        margin-top:0;
+    }
+}
+@media(max-width:992px){
+    #orderSummary{
         text-align:center;
     }
 }
