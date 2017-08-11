@@ -12,17 +12,16 @@ $(".checkout").click(function(e){
     var quantity= $(input).val();
     var imageSrc = e.currentTarget.offsetParent.firstElementChild.currentSrc;
     var name = $(productName).val();
-    console.log(quantity);
-    console.log(name);
-    console.log(imageSrc);
-    window.localStorage.setItem(name, quantity + "|" + imageSrc);
+    var getPrice= $(form).find("input.productPrice")[0];
+    var price = $(getPrice).val();
+    // console.log(quantity);
+    // console.log(name);
+    // console.log(imageSrc);
+    // console.log(price);
+    window.localStorage.setItem(name, quantity + "|" + imageSrc + "|" + price);
 });
 
-function checkout () {
-    
-}
-    
-    
+
     
     
     
