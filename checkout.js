@@ -16,12 +16,32 @@ $(document).ready(function(){
             quantity +
         '</p><p>price: $' +
             price +
-        '</p></div><div class="col-md-1"></div></div>';
+        '</p><p><button id="removeItem">remove</button></p></div><div class="col-md-1 orderSumDes"><p><button class="qtyPlus">+</button></p><p><button class="qtyMinus">-</button></p></div></div>';
         
         $("#orderSummary").append(row);
         var rowTotal = quantity * price;
         Total =  Total + rowTotal;
     }
+    
+    
+    
+    
+    // remove item when this button is clicked
+    // $("#removeItem").click(function(){
+        // var wantRemove=window.getItem( quantity + "|" + imageSrc + "|" + price);
+        // console.log(wantRemove);
+        
+    // });
+    
+    // add or subtract from quantity when clicked
+    // $(".qtyPlus").click(function(){
+    //     quantity=quantity +1;
+    // });
+    // $(".qtyMinus").click(function(){
+    //     quantity=quantity-1;
+    // });
+    
+    
     
     var finalTotal = Total;
 
@@ -36,12 +56,7 @@ $(document).ready(function(){
     
     
     
-    // $(".qtyPlus").click(function(){
-    //     quantity +1;
-    // });
-    // $(".qtyMinus").click(function(){
-    //     quantity-1;
-    // });
+
     
     // <p><button class="qtyPlus">+</button></p><p><button class="qtyMinus">-</button></p>
 });

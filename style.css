@@ -436,13 +436,19 @@ body{
 #placeOrderDiv{
     text-align:center;
 }
-#cakeIcon{
+#cakeIcon, #cookieIcon{
     height:50px;
-    margin:0 auto;
+}
+#cupcakeIcon{
+    height:55px;
 }
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.fade-in-bck {
+	-webkit-animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bck 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 @-webkit-keyframes tracking-in-expand {
   0% {
@@ -468,6 +474,31 @@ body{
     opacity: 1;
   }
 }
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+            transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+            transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
 @media(max-width: 768px) {
     #orderSummary img{
         height:200px;
