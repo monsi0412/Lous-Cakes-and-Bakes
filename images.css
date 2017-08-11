@@ -18,9 +18,184 @@
         }
         
         
-/*    @media(max-width: 768px) {*/
-/*    
-/*}*/
+    @media(max-width: 768px) {
+        img#thirtyseven{
+            height: 300px;
+            width: 100%;
+        }
+        img#thirtyeight{
+            height: 300px;
+            width:100%;
+        }
+        img#thirtynine{
+            height: 300px;
+            width: 100%;
+        }
+        img#fourty{
+            height: 300px;
+            width: 100%;
+        }
+        img#fourtyone{
+            height: 300px;
+            width: 100%;
+        }
+        img#fourtytwo{
+            height: 300px;
+            width: 100%;
+        }
+        img#fourtythree{
+            height: 300px;
+            width: 100%;
+        }
+        img#fourtyfour{
+            height: 300px;
+            width: 100%;
+        }
+        img#one{
+            height: 250px;
+            width: 100%;
+        }
+        img#two{
+            height: 400px;
+            width: 100%;
+        }
+        img#four{
+            height: 230px;
+            width: 100%;
+        }
+        img#three{
+            height: 450px;
+            width: 100%;
+        }
+        img#five{
+            height: 450px;
+            width: 100%;
+        }
+        img#six{
+            height: 450px;
+            width: 100%;
+        }
+        img#seven{
+            height: 500px;
+            width: 100%;
+        }
+        img#eight{
+            height: 450px;
+            width: 100%;
+        }
+        img#nine{
+            height: 450px;
+            width: 100%;
+        }
+        img#ten{
+            height: 450px;
+            width: 100%;
+        }
+        img#twelve{
+            height: 450px;
+            width: 100%;
+        }
+        img#eleven{
+            height: 300px;
+            width: 100%;
+        }
+        img#thirteen{
+            height: 400px;
+            width: 100%;
+        }
+        img#fourteen{
+            height: 400px;
+            width: 100%;
+        }
+        img#sixteen{
+            height: 300px;
+            width: 100%;
+        }
+        img#fifteen{
+            height: 250px;
+            width: 100%;
+        }
+        img#seventeen{
+            height: 250px;
+            width: 100%;
+        }
+        img#eighteen{
+            height: 250px;
+            width: 100%;
+        }
+        img#nineteen{
+            height: 400px;
+            width: 100%;
+        }
+        img#extra{
+            height: 400px;
+            width: 100%;
+        }
+        img#twenty{
+            height: 250px;
+            width: 100%;
+        }
+        img#twentytwo{
+            height: 540px;
+            width: 100%;
+        }
+        img#twentyone{
+            height: 370px;
+            width: 100%;
+        }
+        img#twentythree{
+            height: 300px;
+            width: 100%;
+        }
+        img#twentyfive{
+            height: 300px;
+            width: 100%;
+        }
+        img#twentyfour{
+            height: 220px;
+            width: 100%;
+        }
+        img#twentyseven{
+            height: 320px;
+            width: 100%;
+        }
+        img#twentysix{
+            height: 200px;
+            width: 100%;
+        }
+        img#thirtyone{
+            height: 300px;
+            width: 100%;
+        }
+        img#twentynine{
+            height: 300px;
+            width: 100%;
+        }
+        img#thirty{
+            height: 300px;
+            width: 100%;
+        }
+        img#thirtytwo{
+            height: 220px;
+            width: 100%;
+        }
+        img#thirtythree{
+            height: 220px;
+            width: 100%;
+        }
+        img#thirtyfour{
+            height: 220px;
+            width: 100%;
+        }
+        img#thirtyfive{
+            height: 350px;
+            width: 100%;
+        }
+        img#thirtysix{
+            height: 350px;
+            width: 100%;
+        }
+    }
 
 #one{
     height: 430px;
@@ -254,41 +429,41 @@
 }
 
 #thirtyseven{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #thirtyeight{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #thirtynine{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #fourty{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #fourtyone{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #fourtytwo{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #fourtythree{
-    height:;
+    height: 300px;
     width:100%;    
 }
 
 #fourtyfour{
-    height:;
+    height: 300px;
     width:100%;    
 }

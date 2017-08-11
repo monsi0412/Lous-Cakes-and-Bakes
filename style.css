@@ -299,7 +299,7 @@ body{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-.descriptionBtn:hover, .continueShopping:hover, .goToCheckout:hover, .checkout:hover{
+.descriptionBtn:hover, .continueShopping:hover, .goToCheckout:hover, .checkout:hover, #customSubmit:hover{
     color:white;
     background:#3a3a3a;
     border:2px dotted black;
@@ -349,7 +349,7 @@ body{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s; 
 }
-.continueShopping, .goToCheckout{
+.continueShopping, .goToCheckout, #customSubmit{
     font-family: 'Lancelot', cursive;    
     font-weight:600;
     font-size:20px;
