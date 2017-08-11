@@ -178,8 +178,6 @@ body{
     display:block;
     margin:0 auto;    
     height:500px;
- /*   border: 1px dashed #ddd;*/
-	/*box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;*/
 	padding:5px;
     background: #3a3a3a;
     border: 2px dotted black;
@@ -285,6 +283,9 @@ body{
 
 /*Order page only*/
 
+.close{
+    font-size:35px;
+}
 
 .description{
     font-size:30px;
@@ -298,6 +299,11 @@ body{
     border-radius:5px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+}
+.popover{
+    font-family: 'Lancelot', cursive; 
+    font-size:20px;
+    font-weight:600;
 }
 .descriptionBtn:hover, .continueShopping:hover, .goToCheckout:hover, .checkout:hover, #customSubmit:hover{
     color:white;
@@ -329,8 +335,6 @@ body{
     background: #3a3a3a;
     border: 2px dotted black;
     border-radius:7px;
- /*   border: 1px dashed #666;*/
-	/*box-shadow: 0 0 0 3px #444, 0 0 0 5px #666, 0 0 0 10px #444, 0 0 2px 10px #555;*/
 	margin-bottom:10px;
 }
 .modal-header{
@@ -396,11 +400,7 @@ body{
 /*Checkout Page only*/
 
 #orderSummary{
-    border-image:url(http://www.pngall.com/wp-content/uploads/2016/04/Decorative-Border-PNG-Clipart-180x180.png) 30 round;
-    /*height:90%;*/
-    /*width:90%;*/
     margin:0 auto;
-    /*border:1px dashed black;*/
 }
 #orderSummary img{
     height:300px;

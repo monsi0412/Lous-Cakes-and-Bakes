@@ -1,8 +1,25 @@
-/*global $*/
 
 $(document).ready(function(){
     
-    
+$(function () {
+  $('[data-toggle="popover"]').popover();
+})
+
+$(".pop-content").hide();
+
+$(".checkout").popover({
+  html:true,
+  placement:"right",
+  trigger:"click",
+  content:function(){
+      setTimeout(function () {
+            $('.popover-content').fadeOut('slow');
+        }, 2000);
+      return $(".pop-content").html();
+  }
+});
+
+
 
 $(".checkout").click(function(e){
     var form =e.currentTarget.parentElement;
