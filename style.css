@@ -178,8 +178,12 @@ body{
     display:block;
     margin:0 auto;    
     height:500px;
-    border: 1px dashed #ddd;
-	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+ /*   border: 1px dashed #ddd;*/
+	/*box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;*/
+	padding:5px;
+    background: #3a3a3a;
+    border: 2px dotted black;
+    border-radius:7px;
 }
 #aboutUsImgDiv{
     margin-top: -10px;
@@ -219,6 +223,10 @@ body{
 #map{
     height:500px;
     width:100%;
+    padding:5px;
+    background: #3a3a3a;
+    border: 2px dotted black;
+    border-radius:7px;
 }
 #message{
     height:150px;
@@ -230,6 +238,16 @@ body{
 #contactSubmit{
     font-family: 'Lancelot', cursive;
     font-size:20px;
+    background-color: white;
+    border: 2px dotted black;
+    border-radius:5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#contactSubmit:hover{
+    color:white;
+    background:#3a3a3a;
+    border:2px dotted black;
 }
 @media(max-width: 768px) {
     #map{
@@ -275,7 +293,16 @@ body{
     font-family: 'Lancelot', cursive; 
     font-size:22px;
     width:100px;
-    
+    background-color: white;
+    border: 2px dotted black;
+    border-radius:5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.descriptionBtn:hover, .continueShopping:hover, .goToCheckout:hover, .checkout:hover{
+    color:white;
+    background:#3a3a3a;
+    border:2px dotted black;
 }
 .img-thumbnail{
     background:#3a3a3a;
@@ -298,8 +325,12 @@ body{
     height:300px;
     display:block;
     margin:0 auto;
-    border: 1px dashed #ddd;
-	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+    padding:5px;
+    background: #3a3a3a;
+    border: 2px dotted black;
+    border-radius:7px;
+ /*   border: 1px dashed #666;*/
+	/*box-shadow: 0 0 0 3px #444, 0 0 0 5px #666, 0 0 0 10px #444, 0 0 2px 10px #555;*/
 	margin-bottom:10px;
 }
 .modal-header{
@@ -311,17 +342,28 @@ body{
 #qty{
     width:60px;
 }
-.continueShopping{
-    float:left;
+.checkout{
+    background-color: white;
+    border: 2px dotted black;
+    border-radius:5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+}
+.continueShopping, .goToCheckout{
     font-family: 'Lancelot', cursive;    
     font-weight:600;
     font-size:20px;
+    background-color: white;
+    border: 2px dotted black;
+    border-radius:5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 .goToCheckout{
     float:right;
-    font-family: 'Lancelot', cursive;    
-    font-weight:600;
-    font-size:20px;
+}
+.continueShopping{
+    float:left;
 }
 .modal a:link, a:hover, a:visited, a:active{
     color:inherit;
@@ -374,15 +416,57 @@ body{
     text-align:center;
 }
 .orderRows{
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
 #placeOrder{
     font-family: 'Lancelot', cursive;    
     font-weight:600;
     font-size:20px;    
+    background-color: white;
+    border: 2px dotted black;
+    border-radius:5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#placeOrder:hover{
+    color:white;
+    background:#3a3a3a;
+    border:2px dotted black;
 }
 #placeOrderDiv{
     text-align:center;
+}
+#cakeIcon{
+    height:50px;
+    margin:0 auto;
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media(max-width: 768px) {
     #orderSummary img{

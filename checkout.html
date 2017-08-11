@@ -77,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12" id="placeOrderDiv">
-                        <button id="placeOrder">
+                        <button id="placeOrder" data-toggle="modal" data-target="#thankyouModal">
                             Place Order
                         </button>
                 </div>
@@ -88,16 +88,20 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1></h1>
+                        <button type="button" class="close" id="checkoutClose" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        
+                        <h1 class="tracking-in-expand">
+                            Thank You
+                        </h1>
+                        <h1 class="tracking-in-expand">
+                            for choosing Lou's
+                        </h1>
+                        <img src="flourishes/cake icon.ico" class="img-responsive tracking-in-expand" id="cakeIcon">
                     </div>
-                    <div class="modal-footer">
-                        <a href="checkout.html"><button class="goToCheckout" data-toggle="modal" data-target="#thankyouModal">Go to Checkout</button></a>
-                        <button class="continueShopping" data-dismiss="modal">Continue Shopping</button>
-                    </div>
+                    <!--<div class="modal-footer">-->
+                    <!--    <button class="continueShopping" data-dismiss="modal">Continue Shopping</button>-->
+                    <!--</div>-->
                 </div>
             </div>       
         </div>

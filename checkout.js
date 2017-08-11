@@ -16,7 +16,7 @@ $(document).ready(function(){
             quantity +
         '</p><p>price: $' +
             price +
-        '</p></div><div class="col-md-1"><p><button class="qtyPlus">+</button></p><p><button class="qtyMinus">-</button></p></div></div>';
+        '</p></div><div class="col-md-1"></div></div>';
         
         $("#orderSummary").append(row);
         var rowTotal = quantity * price;
@@ -26,11 +26,22 @@ $(document).ready(function(){
     var finalTotal = Total;
 
     $("#orderTotal").append(finalTotal + ".00");
+    $("#checkoutClose").click(function(){
+        window.localStorage.clear();
+        window.location.reload();
+    });
     
-    $(".qtyPlus").click(function(){
-        quantity +1;
-    });
-    $(".qtyMinus").click(function(){
-        quantity-1;
-    });
+    
+    
+    
+    
+    
+    // $(".qtyPlus").click(function(){
+    //     quantity +1;
+    // });
+    // $(".qtyMinus").click(function(){
+    //     quantity-1;
+    // });
+    
+    // <p><button class="qtyPlus">+</button></p><p><button class="qtyMinus">-</button></p>
 });
