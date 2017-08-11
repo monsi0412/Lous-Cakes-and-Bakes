@@ -390,6 +390,9 @@ body{
     .modal h1{
         font-size:36px;
     }
+    .continueShopping, .goToCheckout{
+        font-size:16px;
+    }
 }
 @media(max-width:992px){
     .orderOption, .orderDes{
